@@ -1,0 +1,13 @@
+{% extends 'main/news.html' %}
+{% load static %}
+
+{% block title %}
+<title>Удаление статьи</title>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <button class="btn brn-success" type="submit">Удалить статью</button>
+</form>
+{% endblock %}

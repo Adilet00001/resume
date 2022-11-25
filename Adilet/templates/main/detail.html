@@ -1,0 +1,15 @@
+{% extends 'main/news.html' %}
+{% load static %}
+{% block content %}
+<div class="reklama">
+    <img src="{{ Detal.image.url }}">
+    <p>{{ Detal.name }}</p>
+    <p>{{ Detal.last_name }}</p>
+    <p>{{ Detal.description }}</p>
+    <p>{{ Detal.email }}</p>
+    <p>{{ Detal.phone1 }}</p>
+    <p>{{ Detal.phone2 }}</p>
+    <p>{{ Detal.Address }}</p>
+    <p>{{ Detal.profession }}</p>
+</div>
+{% endblock %}

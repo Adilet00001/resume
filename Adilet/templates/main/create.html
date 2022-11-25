@@ -1,0 +1,22 @@
+{% extends 'main/news.html' %}
+{% load static %}
+
+{% block title %}
+<title>Добавить статью</title>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.name }}<br>
+    {{ form.last_name }}<br>
+    {{ form.email }}<br>
+    {{ form.description }}<br>
+    {{ form.phone1 }}<br>
+    {{ form.phone2 }}<br>
+    {{ form.Address }}<br>
+    {{ form.profession }}<br>
+    {{ form.image }}<br>
+    <button class="btn brn-success" type="submit">Добавить статью</button>
+</form>
+{% endblock %}
